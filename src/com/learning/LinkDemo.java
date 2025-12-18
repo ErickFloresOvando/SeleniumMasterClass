@@ -17,4 +17,5 @@ public class LinkDemo {
         driver.findElement(By.partialLinkText("Forgot")).click();
 
     }
+
 }

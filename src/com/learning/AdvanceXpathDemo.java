@@ -7,7 +7,7 @@ public class AdvanceXpathDemo {
     public static void main(String[] args) {
 
         //Specify path of ChromeDriver exe
-        System.setProperty("webdriver.chrome.driver", "/Users/erickfloresovando/Downloads/chromedriver-mac-arm64 2/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/erickfloresovando/Downloads/chromedriver-mac-arm64/chromedriver");
 
         //Crear una instancia
         ChromeDriver driver = new ChromeDriver();
