@@ -1,15 +1,21 @@
-Este repositorio contiene ejemplos prácticos de automatización de pruebas utilizando Selenium WebDriver, enfocados en demostrar buenas prácticas, patrones comunes y distintos escenarios de testing automatizado para aplicaciones web.
+This repository contains practical examples of test automation using Selenium WebDriver, focused on demonstrating best practices, common design patterns, and different automated testing scenarios for web applications.
 
-📌 Objetivos del Proyecto
-Aprender y practicar automatización de pruebas con Selenium
-Mostrar ejemplos claros y reutilizables
-Implementar buenas prácticas de automatización
-Facilitar una base para futuros proyectos de testing
+📌 Project Objectives
 
+Learn and practice test automation with Selenium
 
-🛠️ Tecnologías Utilizadas
-Lenguaje: (Java)
-Selenium WebDriver
-Gestor de dependencias: (Maven)
-Framework de testing: (JUnit / TestNG)
+Provide clear and reusable automation examples
 
+Implement industry best practices for test automation
+
+Serve as a solid foundation for future testing projects
+
+🛠️ Technologies Used
+
+Programming Language: Java
+
+Automation Tool: Selenium WebDriver
+
+Dependency Management: Maven
+
+Testing Framework: JUnit / TestNG
