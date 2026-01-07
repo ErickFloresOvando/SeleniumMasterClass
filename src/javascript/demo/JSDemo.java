@@ -29,5 +29,15 @@ public class JSDemo {
         //Click on login button
         WebElement loginBtn = driver.findElement(By.xpath("//button[@type='submit']"));
         js.executeScript("arguments[0].click()",loginBtn);
+
+        //Get title
+        String title = js.executeScript("return document.title").toString();
+        System.out.println("Page title is: " + title);
+
+        //Get URL
+        String url = js.executeScript("return document.URL").toString();
+        System.out.println("Page URL is: " + url);
+
+
     }
 }
