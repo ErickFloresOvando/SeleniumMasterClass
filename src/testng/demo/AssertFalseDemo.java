@@ -7,9 +7,10 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class AssertEqualsDemo {
+public class AssertFalseDemo {
+
     @Test
-    public void loginToOrangeHRM(){
+    public void checkIfAllCheckBoxIsSelected(){
         //Launch Browser
         System.setProperty("webdriver.chrome.driver", "/Users/erickfloresovando/Downloads/chromedriver-mac-arm64-2/chromedriver");
         ChromeDriver driver = new ChromeDriver();
@@ -30,17 +31,13 @@ public class AssertEqualsDemo {
         //Click on login button
         driver.findElement(By.xpath("//button[@type='submit']")).click();
 
-        //Variables
-        String actualurl = driver.getCurrentUrl();
-        String expectedurl = "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index";
-        //boolean dashboardIsDisplayedStatus = driver.findElement(By.xpath("//h6[text()='Dashboard']")).isDisplayed();
+        //Click on leave button
+        driver.findElement(By.xpath("//span[text()='Leave']")).click();
 
-        //Assertions
-        Assert.assertEquals(actualurl, expectedurl);
-        //Assert.assertNotEquals(actualurl, expectedurl);
-        //Assert.assertTrue(dashboardIsDisplayedStatus);
+        boolean isDateCheckBoxSelected = driver.findElement(By.xpath("//i[@class='oxd-icon bi-check oxd-checkbox-input-icon']")).isDisplayed();
+
+        Assert.assertFalse(isDateCheckBoxSelected);
+
 
     }
-
-
 }
