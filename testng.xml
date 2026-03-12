@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SampleSuite">
+    <test name="SampleTestCase">
+        <classes>
+                <class name="testng.demo.OrangeHRMTestCases">
+                    <methods>
+                        <include name="loginToApplication"></include>
+                        <exclude name="searchLeave"></exclude>
+                    </methods>
+                </class>
+        </classes>
+    </test>
+</suite>
