@@ -3,10 +3,7 @@ package testng.demo;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.time.Duration;
 
@@ -24,9 +21,9 @@ public class ParametersDemo {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-    @Parameters({"userName", "password"})
+    @Parameters({"userNameValue", "password"})
     @Test(priority = 1)
-    public void loginToApplication(String userName, String password) {
+    public void loginToApplication(@Optional("superAdmin") String userName, String password) {
         //Open login page
         driver.get("https://opensource-demo.orangehrmlive.com/");
         //Enter username
