@@ -1,6 +1,6 @@
-package orange.hrm.test;
+package hrm.test;
 
-import orange.hrm.pages.LoginPage;
+import hrm.pages.LoginPage;
 
 public class LoginTest extends BaseTest{
 

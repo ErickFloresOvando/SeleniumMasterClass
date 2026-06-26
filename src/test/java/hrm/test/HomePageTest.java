@@ -1,8 +1,6 @@
-package orange.hrm.test;
+package hrm.test;
 
-import orange.hrm.pages.HomePage;
-import org.openqa.selenium.By;
-import org.testng.annotations.AfterClass;
+import hrm.pages.HomePage;
 import org.testng.annotations.Test;
 
 public class HomePageTest extends BaseTest{

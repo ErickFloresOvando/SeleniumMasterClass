@@ -1,12 +1,9 @@
-package orange.hrm.pages;
+package hrm.pages;
 
-import orange.hrm.test.BaseTest;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import hrm.test.BaseTest;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Test;
 import report.ExtentReportUtils;
 
 import java.util.logging.LogManager;

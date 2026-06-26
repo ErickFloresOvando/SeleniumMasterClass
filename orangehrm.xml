@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="">
+<suite name="Suite">
 
+    <listeners>
+        <listener class-name="report.ITestListenerDemo"/>
+    </listeners>
+
+    <test name="Test" thread-count="5">
+        <classes>
+            <class name="hrm.test.LoginTest"></class>
+            <class name="hrm.test.HomePageTest"></class>
+        </classes>
+    </test>
 </suite>
